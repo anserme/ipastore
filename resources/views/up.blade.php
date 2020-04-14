@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laravel Upload File</title>
+</head>
+<body>
+    <!-- 上传文件必须加: enctype="multipart/form-data" -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        {{csrf_field()}}
+        <input type="file" name="img">
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
